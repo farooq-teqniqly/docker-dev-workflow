@@ -18,3 +18,7 @@ app.get("/hobbies", (req, res) => {
 app.get("/status", (req, res) => {
   res.send("All good!");
 });
+
+app.get("/colors", (req, res) => {
+  res.send(["red", "green", "blue", "yellow"]);
+});
