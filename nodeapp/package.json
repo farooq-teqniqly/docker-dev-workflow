@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "task": "node ./tasksfile.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run-dev": "nodemon",
-    "docker:build-dev": "docker image build -t sample-node-app-dev -f Dockerfile.dev .",
-    "docker:run-dev": "docker container run --rm -it --name my-sample-node-app-dev --volume %cd%:/app -p 3000:3000 sample-node-app-dev",
-    "docker:build": "docker image build -t sample-node-app .",
-    "docker:run": "docker container run --rm -it --name my-sample-node-app --volume %cd%:/app -p 3000:3000 sample-node-app"
+    "run-dev": "nodemon"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "tasksfile": "^5.1.1"
   }
 }
