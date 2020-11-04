@@ -20,5 +20,5 @@ app.get("/status", (req, res) => {
 });
 
 app.get("/colors", (req, res) => {
-  res.send(["red", "green", "blue", "yellow", "purple"]);
+  res.send(["red", "green", "blue", "yellow", "purple", "black"]);
 });
