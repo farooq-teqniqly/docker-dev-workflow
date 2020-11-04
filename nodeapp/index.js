@@ -14,3 +14,7 @@ const hobbies = ["Swimming", "Diving", "Jogging", "Cooking", "Singing"];
 app.get("/hobbies", (req, res) => {
   res.send(hobbies);
 });
+
+app.get("/status", (req, res) => {
+  res.send("All good!");
+});
