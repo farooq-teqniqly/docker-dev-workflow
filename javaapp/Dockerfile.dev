@@ -1,0 +1,6 @@
+FROM openjdk:8-slim-buster
+WORKDIR /app
+COPY Hello.java .
+RUN javac Hello.java
+CMD ["java", "Hello"]
+
